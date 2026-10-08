@@ -1,0 +1,254 @@
+[
+  {
+    "id": "werewolf",
+    "name": "Kurt Adam",
+    "description": "Her gece diğer kurtlarla uyanır, ortak bir karar vererek köyden kimi öldüreceğinizi seçersiniz.",
+    "team": "werewolves",
+    "image": "assets/roles/werewolf.webp"
+  },
+  {
+    "id": "villager",
+    "name": "Köylü",
+    "description": "Özel bir yeteneğin yok. Gündüzleri tartışmalara katılır, kimin hain olduğunu anlamaya çalışır ve oylama ile asılacak kişiyi belirlersin.",
+    "team": "villagers",
+    "image": "assets/roles/villager.webp"
+  },
+  {
+    "id": "doctor",
+    "name": "Doktor",
+    "description": "Hayat kurtarıcısın. Geceleri bir kişiyi seçer ve onu her türlü saldırıdan (kurşun, ısırık, bıçak) korursun.\n\nDeliyken ne yapamaz:\nİyileştiremez ve kaldıramaz! Gece kimi seçersen seç koruman asla işlemez; koruduğunu sandığın kişi saldırıya uğrarsa ölür, onu ölümden kaldıramazsın.",
+    "team": "villagers",
+    "image": "assets/roles/doctor.webp"
+  },
+  {
+    "id": "seer",
+    "name": "Gözcü",
+    "description": "Bilgi toplarsın. Her gece bir oyuncuyu seçer ve onun rolünün tam olarak ne olduğunu öğrenirsin.\n\nDeliyken ne yapamaz:\nGerçek rolü öğrenemez! Kristal görün sana gerçeği değil, sistem tarafından rastgele uydurulan sahte ve yanlış bir rol gösterir.",
+    "team": "villagers",
+    "image": "assets/roles/seer.webp"
+  },
+  {
+    "id": "vigilante",
+    "name": "Şerif",
+    "description": "Adalet senin namlunda. Geceleri kullanabileceğin 2 mermin var. İçinizdeki hain olduğunu düşündüğün kişileri vurabilirsin.\n\nDeliyken ne yapamaz:\nKimseyi öldüremez! Tetiği çektiğinde mermin harcanır ancak kurşunun etkisizdir; sıktığın kişi asla ölmez. (Ayrıca gerçek bir Şerif de Deli bir hedefe ateş ederse mermisi boşa gider, Deli vurulamaz).",
+    "team": "villagers",
+    "image": "assets/roles/vigilante.webp"
+  },
+  {
+    "id": "detective",
+    "name": "Dedektif",
+    "description": "İz sürersin. İlk geceden itibaren bir kişinin evini seçersin. Bir sonraki gece, seçtiğin eve dün kimlerin gittiğini öğrenirsin.\n\nDeliyken ne yapamaz:\nGerçek ziyaretçileri göremez! Eve giren kişi sayısı doğru olsa bile, sana gösterilen ziyaretçi isimlerinin hepsi tamamen sahte ve uydurmadır.",
+    "team": "villagers",
+    "image": "assets/roles/detective.webp"
+  },
+  {
+    "id": "visitor",
+    "name": "Ziyaretçi",
+    "description": "Her gece birini ziyaret edebilirsin. Ancak bu çok risklidir; ziyaret ettiğin kişi tehlikeli bir rolse (Kurt Adam, Seri Katil vb.) veya ziyaret ettiğin eve o an bir saldırı varsa, arada kaynar ve ölürsün.\n\nDeliyken ne yapamaz:\nGerçekten birini ziyaret edemez! Ziyaretin bir yanılsamadır; tehlikeli bir eve gitsen bile aksiyonun hayali olduğu için hiçbir şey olmaz.",
+    "team": "villagers",
+    "image": "assets/roles/visitor.webp"
+  },
+  {
+    "id": "sick_man",
+    "name": "Hasta Adam",
+    "description": "Zamana karşı yarışıyorsun. Çok hastasın ve sadece 3 günlük ömrün var. Eğer Doktor seni seçerse 2 can ekler ve ömrün uzar. Doktor yetişmezse, süren dolduğunda ecelinle ölürsün.\n\nDeliyken ne yapamaz:\nEceliyle ölmez! Aslında hasta değilsin, sadece hastalık hastasısın (hipokondriyak); 3 gün dolsa bile ecelinle ölmezsin, boşuna doktor beklersin.",
+    "team": "villagers",
+    "image": "assets/roles/sick_man.webp"
+  },
+  {
+    "id": "father",
+    "name": "Baba",
+    "description": "Gizli bir bağın var. Köylüler arasından rastgele 2 kişi senin çocuğundur, ancak onlar senin ebeveynleri olduğunu bilmezler. Eğer 2 çocuğun ölürse, kederinden sen de ölürsün.\n\nDeliyken ne yapamaz:\nKederden ölmez! Çocuklarınla olan bağın tamamen bir yanılsamadır; seçilen çocuklar ölse bile sen kederinden ölmezsin.",
+    "team": "villagers",
+    "image": "assets/roles/father.webp"
+  },
+  {
+    "id": "tellal",
+    "name": "Tellal",
+    "description": "Orta Çağ tellalı. Gece seçtiğin oyuncuyu provoke edersin. Sabah bu kişi provokasyon edildi uyarısı görünür ve oylamaya 2 oy almış olarak başlar. 2 kışkırtma hakkın vardır.\n\nDeliyken ne yapamaz:\nKimseyi provoke edemez! Kışkırtma hakkın harcanır ancak sabah oylamasında hedefin üzerine fazladan 2 oy eklenmez; kışkırtma etkisiz kalır.",
+    "team": "villagers",
+    "image": "assets/roles/tellal.webp"
+  },
+  {
+    "id": "suskun",
+    "name": "Suskun",
+    "description": "En zorlu görevlerden biri. Oyun boyunca tek bir kelime bile konuşamazsın. Kendini hareketlerinle ifade etmen gerekir.",
+    "team": "villagers",
+    "image": "assets/roles/suskun.webp"
+  },
+  {
+    "id": "istihbarat_sefi",
+    "name": "İstihbarat Şefi",
+    "description": "Bilgi kirliliği ile savaşırsın. 2 günde bir geceleri sana istihbarat gelir. Sana sunulan 2 isimden birisi kesinlikle haindir. Ancak dikkatli ol, gelen istihbarat bazen yanlış olabilir, her bilgiye güvenme.\n\nDeliyken ne yapamaz:\nGerçek istihbarat alamaz! Sana sunulan 2 isim tamamen rastgele seçilir; verilen iki kişinin ikisi de masum köylü veya ikisi de hain olabilir.",
+    "team": "villagers",
+    "image": "assets/roles/istihbarat_sefi.webp"
+  },
+  {
+    "id": "journalist",
+    "name": "Gazeteci",
+    "description": "Her gece bir gazete resmi çizer ve manşet yazarsın. Sabah olduğunda gazeten tüm köy halkına gösterilir!\n\nDeliyken ne yapamaz:\nGerçek haber yazamaz! Çizdiğin manşetler sabah yayınlansa bile içindeki bilgiler bir delinin hayal ürünüdür, köy için hiçbir doğruluk taşımaz.",
+    "team": "villagers",
+    "image": "assets/roles/journalist.webp"
+  },
+  {
+    "id": "necromancer",
+    "name": "Ölü Büyücüsü",
+    "description": "Ölüm senin için son değildir. Geceleyin, daha önce ölmüş bir oyuncuyu diriltebilirsin. Bu yeteneği oyun boyunca sadece 1 kez kullanabilirsin.\n\nDeliyken ne yapamaz:\nÖlüyü diriltemez! Tek kullanımlık diriltme hakkın harcanır ama mezardan kimse geri dönmez; diriltme büyüsü başarısız olur.",
+    "team": "villagers",
+    "image": "assets/roles/necromancer.webp"
+  },
+  {
+    "id": "chef",
+    "name": "Aşçı",
+    "description": "Akşama bir ziyafet hazırlarsın ve masaya 2 kişiyi davet edersin. Eğer ikisi aynı takımdansa sofrada sorun çıkmaz. Farklı takımlardan ise masada gerginlik hissedersin.\n\nDeliyken ne yapamaz:\nDoğru sezgiyi alamaz! Normalde iki kurt da gelse, iki köylü de gelse aynı takımdan oldukları için masada huzur hissedilir. Ancak Deliysen hislerin tamamen yanıltıcıdır (%50 sahte sonuç); iki kurtta da huzur veya gerginlik hissedebilir, iki masum köylüde gerginlik duyup köyü yanıltabilirsin.",
+    "team": "villagers",
+    "image": "assets/roles/chef.webp"
+  },
+  {
+    "id": "celebrity",
+    "name": "Ünlü",
+    "description": "Tanınmış birisin. Normal bir köylüden farkın yok ama her gece rastgele bir oyuncuya senin kimliğin (ünlü olduğun) gösterilir.",
+    "team": "villagers",
+    "image": "assets/roles/celebrity.webp"
+  },
+  {
+    "id": "medyum",
+    "name": "Medyum",
+    "description": "Büyülü bir küren var. Her gece bir oyuncunun sınıfını büyülü küren sayesinde öğrenirsin.\n\nDeliyken ne yapamaz:\nGerçek sınıfı göremez (küre yalan söyler)! Küren sana hedefin gerçek takım aurası yerine tamamen rastgele ve yanıltıcı bir sınıf (Köylü, Kurt veya Tarafsız) gösterir.",
+    "team": "villagers",
+    "image": "assets/roles/medyum.webp"
+  },
+  {
+    "id": "templar",
+    "name": "Tapınakçı",
+    "description": "Kutsal bir suya sahipsin. Gece birini seç ve kutsal suyu kullan. Eğer hedef Kurt Adam ise ölür. Eğer hedef köylü veya tarafsız ise hedef ölmez ama sen diğer tapınakçılar tarafından suyu yanlış kullandığın için öldürülürsün. Bu yeteneği oyun boyunca sadece 1 kez kullanabilirsin.\n\nDeliyken ne yapamaz:\nKutsal suyu kullanamaz (etkisiz çeşme suyudur)! Suyu kime dökersen dök ne hedef ölür ne de sen ölürsün; su tamamen sıradan ve etkisizdir.",
+    "team": "villagers",
+    "image": "assets/roles/templar.webp"
+  },
+  {
+    "id": "police",
+    "name": "Polis",
+    "description": "Köyde adalet ve düzen senden sorulur. Her gece şüphelendiğin bir oyuncuyu gözaltına alarak o gece rolünü kullanmasını engellersin. Aynı kişiyi üst üste iki gece gözaltına alamazsın.\n\nDeliyken ne yapamaz:\nRol engelleyemez (gözaltı başarısız olur)! Gözaltına aldığın oyuncunun gece aksiyonu engellenmez, hedefin rolünü normal şekilde kullanmaya devam eder.",
+    "team": "villagers",
+    "image": "assets/roles/police.webp"
+  },
+  {
+    "id": "mayor",
+    "name": "Muhtar",
+    "description": "Köyün seçilmiş liderisin. Gece bir kez olağanüstü köy toplantısı düzenleyerek tüm köyü koruma altına alabilir ve muhtarlığını ilan edebilirsin. İlan ettikten sonra oylamadaki oyun 2 sayılır!\n\nDeliyken ne yapamaz:\nKöyü koruyamaz ve oylamada oyu 2 sayılmaz! Mührün ve yetki belgen sahtedir; gece köye koruma sağlanmaz, gündüz oyun tek oy olarak sayılır.",
+    "team": "villagers",
+    "image": "assets/roles/mayor.webp"
+  },
+  {
+    "id": "bodyguard",
+    "name": "Fedai",
+    "description": "Canını ortaya koyarsın. Her gece bir köylüyü korursun. Eğer koruduğun kişiye o gece ölümcül bir saldırı gelirse, o kurtulur ancak sen onun yerine hayatını kaybedersin.\n\nDeliyken ne yapamaz:\nKoruması işlemez, canını veremez! Koruduğun kişiye ölümcül bir saldırı gelirse onu kurtaramazsın; o ölür, sen ise sanki hiçbir şey olmamış gibi hayatta kalırsın.",
+    "team": "villagers",
+    "image": "assets/roles/bodyguard.webp"
+  },
+  {
+    "id": "charmer",
+    "name": "Gönül Çelen",
+    "description": "Tarafsız bir rolsün. İlk gece bir oyuncuyu seçerek bağımsız Aşıklar takımını kurarsın. Biriniz ölürse diğeri hayatta kalır ve aşkı için mücadeleye devam eder. Diğer tüm rakipler elendiğinde, takımınızdan en az bir kişi hayattaysa kazanırsınız. Hayatta kalan Survivor sizinle kazanabilir. Takımınızdaki rollerin normal erken galibiyet kuralları da geçerlidir. Aşıklar birbirini öldüremez.",
+    "team": "neutral",
+    "image": "assets/roles/charmer.webp"
+  },
+  {
+    "id": "madman",
+    "name": "Deli",
+    "description": "Kendini rolü olan bir köylü zannedersin ama aslında delisin. Kullandığın roller inaktif veya rastgele çalışır.\n\nDeliyken ne yapamaz:\nYeteneklerini asla çalıştıramaz! Kendini Doktor sanırsan kaldıramazsın, Şerif sanırsan vuramazsın, Gözcü sanırsan yalan görürsün. Oyun bitene kadar Deli olduğunu asla bilemezsin!",
+    "team": "villagers",
+    "image": "assets/roles/madman.webp"
+  },
+  {
+    "id": "rabid_werewolf",
+    "name": "Kuduz Kurt Adam",
+    "description": "İlk gece özel bir gücün vardır; seçtiğin kişiyi öldürmez, onu bir Kurt Adam'a dönüştürürsün. O andan sonraki geceler normal bir kurt gibi davranır, ekibe katılırsın.",
+    "team": "werewolves",
+    "image": "assets/roles/rabid_werewolf.webp"
+  },
+  {
+    "id": "strong_wolf",
+    "name": "Güçlü Kurt",
+    "description": "Sürüdeki kurtlarla birbirinizi tanırsınız; Yalnız Kurt ise gizli kalır. Her gece kurtların ortak oylamasından bağımsız olarak bir kişiye saldırırsın. Kurt takımıyla birlikte kazanırsın.",
+    "team": "werewolves",
+    "image": "assets/roles/strong_wolf.webp"
+  },
+  {
+    "id": "lone_wolf",
+    "name": "Yalnız Kurt",
+    "description": "Kurt takımındasın ve kurtlarla birlikte kazanırsın. Diğer kurtları tanımazsın; onlar da seni tanımaz. Her gece sürünün oylamasından bağımsız bir kişiye saldırırsın. Kurtlarla birbirinize saldırabilirsiniz. Saldırın normal kurt saldırısından önce gerçekleşir.",
+    "team": "werewolves",
+    "image": "assets/roles/lone_wolf.webp"
+  },
+  {
+    "id": "hypnotist_wolf",
+    "name": "Hipnotist Kurt",
+    "description": "Kurt takımındasın ve her gece diğer kurtlarla birlikte oylama yaparsın. Ayrıca oyun boyunca bir kez kullanabileceğin hipnoz gücün var — bir köylüyü hipnoz ederek onu deliye dönüştürürsün. Deliye dönüşen köylünün yeteneği rastgele sonuç verir veya hiç çalışmaz. Hipnoz gecenin sonunda gerçekleşir.",
+    "team": "werewolves",
+    "image": "assets/roles/hypnotist_wolf.webp"
+  },
+  {
+    "id": "jester",
+    "name": "Soytarı",
+    "description": "Ölmek istiyorsun. Tek amacın gündüz yapılan oylamada kendini astırmaktır. Eğer köylüler seni asarsa, oyun o an biter ve kazanan sen olursun.",
+    "team": "neutral",
+    "image": "assets/roles/jester.webp"
+  },
+  {
+    "id": "survivor",
+    "name": "Survivor",
+    "description": "Etliye sütlüye karışmazsın. Gece saldırılarından korunmak için 3 adet hakkın (yeleğin) var. Oyun bittiğinde (kim kazanırsa kazansın) eğer hala nefes alıyorsan sen de kazanmış sayılırsın.",
+    "team": "neutral",
+    "image": "assets/roles/survivor.webp"
+  },
+  {
+    "id": "serial_killer",
+    "name": "Seri Katil",
+    "description": "Saf kaos. Kimseyle takım değilsin. Her gece birini öldürebilirsin. Amacın oyunun sonunda tek başına hayatta kalan kişi olmaktır.",
+    "team": "neutral",
+    "image": "assets/roles/serial_killer.webp"
+  },
+  {
+    "id": "gambler",
+    "name": "Kumarbaz",
+    "description": "Borç batağındasın. Oyuna borçlu başlarsın. Amacın 2 gece boyunca sabah asılacak kişiyi doğru tahmin etmektir. Kumar oynadığın (tahmin yaptığın) geceler kendini korur ve öldürülemezsin. Doğru tahmin edersen parayı alır ve köyden kaçıp kurtulursun. İlk yanlış tahmininde ise alacaklılar seni gece bulur ve öldürür.",
+    "team": "neutral",
+    "image": "assets/roles/gambler.webp"
+  },
+  {
+    "id": "raven",
+    "name": "Kuzgun",
+    "description": "İntikamcı bir ruh. Amacın tek başına kazanmaktır. Geceleri kuzgunlarını gönderip bir oyuncuyu işaretlersin. Daha sonraki turlarda işaretli olan bu kişileri büyün ile topluca öldürebilirsin.",
+    "team": "neutral",
+    "image": "assets/roles/raven.webp"
+  },
+  {
+    "id": "white_werewolf",
+    "name": "Beyaz Kurt Adam",
+    "description": "Hainsin ama yalnızsın. Kurt adamlarla birlikte uyanır, onlarla kimi öldüreceğini seçersin. Ancak asıl amacın tek başına kazanmaktır. Diğer kurtları da eleyip son kalan Kurt sen olmalısın.",
+    "team": "neutral",
+    "image": "assets/roles/white_werewolf.webp"
+  },
+  {
+    "id": "mind_flayer",
+    "name": "Zihin Yüzen",
+    "description": "Karanlık bir zeka. Her gece bir oyuncuya gizli parazit yerleştirebilirsin. Hayattaki diğer tüm oyuncular parazitlendiğinde oyunu kazanırsın. Pas geçtiğin gecelerde %20 ihtimalle yeni bir parazit üretebilirsin.",
+    "team": "neutral",
+    "image": "assets/roles/mind_flayer.webp"
+  },
+  {
+    "id": "wolf_pup",
+    "name": "Yavru Kurt",
+    "description": "Kurtlar vadisinin en masumu. Diğer kurtlarla uyanır ve oylamaya katılırsın. Eğer ölürsen, kurt sürüsü öfkeden çılgına döner ve ertesi gece 2 kişiyi birden öldürür!",
+    "team": "werewolves",
+    "image": "assets/roles/wolf_pup.webp"
+  },
+  {
+    "id": "thief",
+    "name": "Hırsız",
+    "description": "Gecenin gölgesi. Tarafsız bir rolsün. Her gece birinin evine sızıp onu öldürebilir ve rolünü çalabilirsin. Bir rol çaldığında o rolün takımına ve yeteneklerine bürünürsün.",
+    "team": "neutral",
+    "image": "assets/roles/thief.webp"
+  }
+]
