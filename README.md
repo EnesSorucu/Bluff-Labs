@@ -12,6 +12,8 @@ ZIP'i açıp `index.html` dosyasını tarayıcıya sürükleyebilirsiniz; görse
 - Tasarım: `dist/site.css`
 - Rol filtreleri, arama, açıklama pencereleri, oyun aşamaları ve görsel galerisi: `dist/site.js`
 - 36 rolün uygulamadan alınan açıklamaları: `dist/roles.json`
+- Ana sayfadaki uzun rol listesi, mevcut çizgi roman kolajından üretilen responsive WebP görselle değiştirilmiştir. Mobilde dikey, geniş ekranda yatay kolaj kullanılır; 540/900 ve 960/1800 piksel varyantları tarayıcı tarafından seçilir.
+- Ayrıntılı rol listesi, arama ve filtreler `dist/roles.html` ve `dist/roles.en.html` sayfalarındadır. Ana sayfada 36 ayrı kart veya rol açıklaması JSON'u yüklenmez.
 - Türkçe ana sayfa: `dist/index.html`; İngilizce ana sayfa: `dist/en.html`. İngilizce rol açıklamaları uygulamanın `app_en.arb` kaynağından alınmıştır.
 - Yeni Bluff Labs amblemi ve masa bannerı `source-assets` altında saklanır. Web kopyaları `dist/assets` altındadır.
 - Alt bölümde Werewolf, Mafia Resistance ve Limitly korunur. Her uygulama için iki bağlantı bulunur: gizlilik ve kullanım koşulları. Kullanım koşullarında TR/EN seçimi vardır.

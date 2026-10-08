@@ -20,7 +20,7 @@ filters.forEach(button => button.addEventListener('click', () => {
   filters.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
   filterRoles();
 }));
-search.addEventListener('input', filterRoles);
+search?.addEventListener('input', filterRoles);
 const teamNames = {villagers:'KÖYLÜLER', werewolves:'KURTLAR', neutral:'TARAFSIZLAR'};
 const teamColors = {villagers:'#22c55e', werewolves:'#ef4444', neutral:'#60a5fa'};
 let roleData = JSON.parse(document.getElementById('role-data')?.textContent || 'null');
