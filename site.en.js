@@ -58,9 +58,10 @@ document.querySelectorAll('dialog').forEach(dialog => {
   });
 });
 const phases = {
-  setup: ['01 / SETUP', 'EVERYONE HAS A SECRET.', 'Add players and choose the roles for your table. Pass the phone so everyone can discover their secret identity.', '02-trust-no-one', 'Player secret-role screen'],
-  night: ['02 / NIGHT', 'THE VILLAGE SLEEPS. WOLVES WAKE.', 'Close your eyes. Pass the phone to the active night roles. Players make secret choices while the app guides the night.', '01-night-falls', 'Werewolf night screen'],
-  day: ['03 / DAY & VOTING', 'NOW EVERYONE IS INNOCENT.', 'Read the morning news, discuss what happened and vote on a suspect. One bluff, one accusation, one vote can change the table.', '06-every-vote-counts', 'Werewolf voting screen']
+  setup: ['01 / SETUP', 'BUILD YOUR TABLE.', 'Add names, choose player avatars and pick the roles for your table. When everyone is ready, start passing the phone.', 'player-setup', 'Add-player screen'],
+  reveal: ['02 / SECRET IDENTITY', 'TAKE A SECRET LOOK.', 'When the phone reaches you, check your role in private. Learn your identity, hide the screen and pass the phone to the next player.', '02-trust-no-one', 'Player secret-role screen'],
+  night: ['03 / NIGHT', 'THE VILLAGE SLEEPS. WOLVES WAKE.', 'Close your eyes. Pass the phone to the active night roles. Players make secret choices while the app guides the night.', '01-night-falls', 'Werewolf night screen'],
+  day: ['04 / DAY & VOTING', 'NOW EVERYONE IS INNOCENT.', 'Read the morning news, discuss what happened and vote on a suspect. One bluff, one accusation, one vote can change the table.', '06-every-vote-counts', 'Werewolf voting screen']
 };
 const phaseButtons = [...document.querySelectorAll('[data-phase]')];
 function selectPhase(button) {
@@ -69,6 +70,8 @@ function selectPhase(button) {
     item.tabIndex = item === button ? 0 : -1;
   });
   const phase = phases[button.dataset.phase];
+  document.getElementById('setup-avatars').hidden = button.dataset.phase !== 'setup';
+  document.getElementById('phase-note').textContent = button.dataset.phase === 'setup' ? 'PLAYERS READY. THE TABLE IS YOURS.' : 'GOLDEN RULE: NEVER SHOW YOUR ROLE.';
   document.getElementById('phase-label').textContent = phase[0];
   document.getElementById('phase-title').textContent = phase[1];
   document.getElementById('phase-description').textContent = phase[2];

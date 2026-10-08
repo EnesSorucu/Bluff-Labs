@@ -58,9 +58,10 @@ document.querySelectorAll('dialog').forEach(dialog => {
   });
 });
 const phases = {
-  setup: ['01 / HAZIRLIK', 'HERKESİN BİR SIRRI VAR.', 'Oyuncuları ekle ve masanın rol dağılımını belirle. Telefonu sırayla dolaştır; herkes kendi gizli kimliğini öğrensin.', '02-trust-no-one', 'Oyuncunun gizli rol ekranı'],
-  night: ['02 / GECE', 'KÖY UYUR. KURTLAR UYANIR.', 'Gözler kapansın. Telefon gece aktif olan rollere geçsin. Oyuncular gizlice seçimlerini yapar; uygulama gece akışını yönetir.', '01-night-falls', 'Werewolf gece başlangıç ekranı'],
-  day: ['03 / GÜNDÜZ & OYLAMA', 'ŞİMDİ HERKES MASUM.', 'Sabah haberlerini dinleyin, yaşananları tartışın ve şüpheli oyuncuyu oylayın. Bir blöf, bir suçlama, bir oy: masanın kaderi değişebilir.', '06-every-vote-counts', 'Werewolf oylama ekranı']
+  setup: ['01 / HAZIRLIK', 'MASANI KUR.', 'İsimleri ekle, oyuncuların avatarlarını seç ve masanın rol dağılımını belirle. Herkes hazırsa telefonu dolaştırmaya başlayın.', 'player-setup', 'Oyuncu ekleme ekranı'],
+  reveal: ['02 / GİZLİ KİMLİK', 'ROLÜNE GİZLİCE BAK.', 'Telefon sana geldiğinde rolünü yalnızca sen gör. Kimliğini öğren, ekranı kapat ve telefonu sıradaki oyuncuya ver.', '02-trust-no-one', 'Oyuncunun gizli rol ekranı'],
+  night: ['03 / GECE', 'KÖY UYUR. KURTLAR UYANIR.', 'Gözler kapansın. Telefon gece aktif olan rollere geçsin. Oyuncular gizlice seçimlerini yapar; uygulama gece akışını yönetir.', '01-night-falls', 'Werewolf gece başlangıç ekranı'],
+  day: ['04 / GÜNDÜZ & OYLAMA', 'ŞİMDİ HERKES MASUM.', 'Sabah haberlerini dinleyin, yaşananları tartışın ve şüpheli oyuncuyu oylayın. Bir blöf, bir suçlama, bir oy: masanın kaderi değişebilir.', '06-every-vote-counts', 'Werewolf oylama ekranı']
 };
 const phaseButtons = [...document.querySelectorAll('[data-phase]')];
 function selectPhase(button) {
@@ -69,6 +70,8 @@ function selectPhase(button) {
     item.tabIndex = item === button ? 0 : -1;
   });
   const phase = phases[button.dataset.phase];
+  document.getElementById('setup-avatars').hidden = button.dataset.phase !== 'setup';
+  document.getElementById('phase-note').textContent = button.dataset.phase === 'setup' ? 'OYUNCULAR HAZIR. MASA SENİN.' : 'ALTIN KURAL: ROLÜNÜ KİMSEYE GÖSTERME.';
   document.getElementById('phase-label').textContent = phase[0];
   document.getElementById('phase-title').textContent = phase[1];
   document.getElementById('phase-description').textContent = phase[2];
